@@ -19,6 +19,7 @@ public class Question {
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
             generator = "questions_sequence")
     private Long id;
+
     private String question;
     @ManyToOne(cascade = {DETACH, REFRESH, PERSIST, MERGE})
     @JoinColumn(name = "test_id")
