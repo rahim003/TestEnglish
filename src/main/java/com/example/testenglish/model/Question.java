@@ -1,5 +1,6 @@
 package com.example.testenglish.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +11,7 @@ import static javax.persistence.CascadeType.*;
 
 @Entity
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
 @Table(name = "questions")
 public class Question {
