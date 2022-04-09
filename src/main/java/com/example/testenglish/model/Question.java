@@ -23,6 +23,7 @@ public class Question {
     private String question;
     @ManyToOne(cascade = {DETACH, REFRESH, PERSIST, MERGE})
     @JoinColumn(name = "test_id")
+
     private Test test;
     @OneToMany(cascade = ALL, mappedBy = "question")
     private List<Answers> answers;
