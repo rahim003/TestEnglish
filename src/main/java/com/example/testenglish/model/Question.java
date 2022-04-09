@@ -28,5 +28,7 @@ public class Question {
 
     private Test test;
     @OneToMany(cascade = ALL, mappedBy = "question")
+
+
     private List<Answers> answers;
 }
